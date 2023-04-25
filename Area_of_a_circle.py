@@ -1,3 +1,2 @@
-t=int(input())
-a=3.14*(t*t)
-print(a)
+r=float(input())
+print(r*r*3.14)
