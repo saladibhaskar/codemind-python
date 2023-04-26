@@ -1,6 +1,6 @@
 n=int(input())
-for i in range(n):
-    for j in range(n):
-        print("%c"%(i+65),end=" ")
+for i in range(n,0,-1):
+    for j in range(i):
+        print("%c"%(i+64),end=" ")
     print(end="
 ")
