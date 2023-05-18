@@ -1,2 +1,3 @@
 n=int(input())
-print(n*n*3.14)
+ar=3.14*n*n;
+print(round(ar,2));
