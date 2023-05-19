@@ -1,7 +1,11 @@
 n=int(input())
-a=map(int,input().split())
-s=sum(a)
+a=list(map(int,input().split()))
+su=0
+for i in range(n):
+    su+=a[i]
 for i in range(n,0,-1):
-    if(s%i==0):
+    if su%i==0:
         print(i)
         break
+
+    
