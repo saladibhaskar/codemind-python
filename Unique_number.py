@@ -1,10 +1,7 @@
 n=int(input())
-s=str(n)
-for i in range(0,11):
-    a=s.count(str(i))
-    if(a>=2):
-        print('Not Unique Number')
-        break
-    #print(a,end=" ")
+s=list(set(str(n)))
+sn=list(str(n))
+if len(sn)==len(s):
+    print('Unique Number')
 else:
-    print("Unique Number")
+    print("Not Unique Number")
