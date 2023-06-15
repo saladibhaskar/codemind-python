@@ -9,7 +9,7 @@ def isugly(n):
     elif n%5==0:
         return isugly(n//5)
     return False
-if (isugly(n)):
-    print("Ugly Number")
+if isugly(n):
+    print('Ugly Number')
 else:
-    print("Not Ugly Number")
+    print('Not Ugly Number')
