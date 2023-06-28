@@ -1,11 +1,10 @@
 n=int(input())
-s=n*n;
+sq=n*n
+s=list(str(sq))
 su=0
-while s!=0:
-    r=s%10
-    su+=r
-    s=s//10
+for i in range(0,len(s)):
+    su+=int(s[i])
 if su==n:
-    print("Neon Number")
+    print('Neon Number')
 else:
-    print("Not Neon Number")
+    print('Not Neon Number')
